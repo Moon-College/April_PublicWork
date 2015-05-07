@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GetInfoLog</string>
+    <string name="action_settings">Settings</string>
+    <string name="get_log_content">内容：通过点击\'捕获INFO日志\'按钮，获取Info日志内容。</string>
+    <string name="btn_get_info_log">捕获INFO日志</string>
+
+</resources>
