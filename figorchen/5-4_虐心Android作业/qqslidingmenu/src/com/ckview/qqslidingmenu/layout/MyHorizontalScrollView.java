@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
+import android.util.FloatMath;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +23,8 @@ public class MyHorizontalScrollView extends HorizontalScrollView{
 	private ViewGroup mainView;
 	private int windowWidth;
 	private int menuWidth;
+	private float downX;
+	private Long downTime;
 	private Handler handler = new Handler(){
 		@Override
 		public void handleMessage(Message msg) {
@@ -87,13 +90,41 @@ public class MyHorizontalScrollView extends HorizontalScrollView{
 	@Override
 	public boolean onTouchEvent(MotionEvent ev) {
 		switch (ev.getAction()) {
+		case MotionEvent.ACTION_DOWN:
+			downX = MyHorizontalScrollView.this.getScrollX();
+			downTime = System.currentTimeMillis();
+			break;
+			
 		case MotionEvent.ACTION_UP:
 			Message msg = handler.obtainMessage();
-			if(MyHorizontalScrollView.this.getScrollX() < windowWidth/4){
-				msg.obj = 0;
+			float distance = MyHorizontalScrollView.this.getScrollX() - downX;
+			Long duration = System.currentTimeMillis() - downTime;
+			float velocity = Math.abs(distance/duration);
+			BaseLog.debug("debug2", "downX"+downX);
+			BaseLog.debug("debug2", "nowX"+MyHorizontalScrollView.this.getScrollX());
+			BaseLog.debug("debug2", "distance"+distance);
+			BaseLog.debug("debug2", "duration"+duration);
+			BaseLog.debug("debug2", "velocity"+velocity);
+			//if velocity of sliding is fast than 0.04, smooth slide view
+			if( velocity > 1.0 ){
+				//charge direction of sliding
+				if(distance > 0){
+					//pointer is sliding to right
+					BaseLog.debug("debug2", "to left");
+					msg.obj = menuWidth;
+				}else{
+					//pointer is sliding to left
+					BaseLog.debug("debug2", "to right");
+					msg.obj = 0;
+				}
 			}else{
-				msg.obj = menuWidth;
+				if(MyHorizontalScrollView.this.getScrollX() < windowWidth/4){
+					msg.obj = 0;
+				}else{
+					msg.obj = menuWidth;
+				}
 			}
+			
 			handler.sendMessage(msg);
 			break;
 		default:
