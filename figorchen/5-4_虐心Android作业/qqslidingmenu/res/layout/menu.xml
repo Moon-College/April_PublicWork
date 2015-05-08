@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/menu">
+
+    <LinearLayout style="@style/MenuItem" >
+
+        <ImageView
+            style="@style/MenuItemImage"
+            android:src="@drawable/img_1" />
+
+        <TextView
+            style="@style/MenuItemTextview"
+            android:text="操作1" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/MenuItem" >
+
+        <ImageView
+            style="@style/MenuItemImage"
+            android:src="@drawable/img_2" />
+
+        <TextView
+            style="@style/MenuItemTextview"
+            android:text="操作2" />
+    </LinearLayout>
+
+    <LinearLayout 
+        style="@style/MenuItem">
+        <ImageView 
+            android:src="@drawable/img_3"
+            style="@style/MenuItemImage"/>
+        <TextView 
+            style="@style/MenuItemTextview"
+            android:text="操作3"/>
+    </LinearLayout>
+    <LinearLayout 
+        style="@style/MenuItem">
+        <ImageView 
+            android:src="@drawable/img_4"
+            style="@style/MenuItemImage"/>
+        <TextView 
+            style="@style/MenuItemTextview"
+            android:text="操作4"/>
+    </LinearLayout>
+    <LinearLayout 
+        style="@style/MenuItem">
+        <ImageView 
+            android:src="@drawable/img_5"
+            style="@style/MenuItemImage"/>
+        <TextView 
+            style="@style/MenuItemTextview"
+            android:text="操作5"/>
+    </LinearLayout>
+
+</LinearLayout>
