@@ -27,7 +27,7 @@ public class MainActivity extends Activity implements  OnClickListener {
 		qqLayout=(LinearLayout) findViewById(R.id.qq);
 		btn=(Button) findViewById(R.id.btn);
 		btn.setOnClickListener(this);
-		qqLayout.setOnTouchListener(this);
+		
 	}
     
    
