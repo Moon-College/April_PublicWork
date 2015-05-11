@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">FragmentViewPager</string>
+    <string name="impotant">要闻</string>
+    <string name="video">视频</string>
+    <string name="fan">娱乐</string>
+    <string name="sport">体育</string>
+    <string name="music">音乐</string>
+    <string name="money">财经</string>
+     
+</resources>
