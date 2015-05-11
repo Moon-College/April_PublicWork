@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">viewpager</string>
+    <string-array name="countries">
+        <item>China</item>
+        <item>America</item>
+        <item>Japan</item>
+        <item>India</item>
+        <item>England</item>
+        <item>France</item>
+        <item>Russia</item>
+    </string-array>
+    <color name="choose">#FF0000</color>
+    <color name="unchoose">#FFFFFF</color>
+
+</resources>
