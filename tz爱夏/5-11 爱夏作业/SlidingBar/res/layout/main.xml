@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:other="http://schemas.android.com/apk/res/com.tz.slidingbar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.tz.custom.view.SlidingBarView
+        android:layout_width="150dp"
+        android:layout_height="400dp" 
+        android:background="#00FFFF"
+        other:price_up="2000"
+        other:price_down="100"/>
+
+</LinearLayout>    
