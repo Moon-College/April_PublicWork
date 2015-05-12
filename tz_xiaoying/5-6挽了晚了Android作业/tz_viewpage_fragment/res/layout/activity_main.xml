@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_china"
+                style="@style/rd_style"
+                android:text="拨打" />
+
+            <RadioButton
+                android:id="@+id/rb_us"
+                style="@style/rd_style"
+                android:text="美国" />
+
+            <RadioButton
+                android:id="@+id/rb_Japan"
+                style="@style/rd_style"
+                android:text="日本" />
+
+            <RadioButton
+                android:id="@+id/rb_Korea"
+                style="@style/rd_style"
+                android:text="韩国" />
+
+            <RadioButton
+                android:id="@+id/rb_France"
+                style="@style/rd_style"
+                android:text="法国" />
+
+            <RadioButton
+                android:id="@+id/rb_NKorea"
+                style="@style/rd_style"
+                android:text="朝鲜 " />
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+            <View
+                android:id="@+id/v"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:background="#ff0000" />
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black" >
+          
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
