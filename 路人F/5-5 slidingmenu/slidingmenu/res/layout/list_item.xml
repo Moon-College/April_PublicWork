@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:gravity="left">
+
+    <ImageButton
+        android:id="@+id/face_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_gravity="center" 
+        android:layout_marginLeft="20dp"/>
+
+ 
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" 
+            android:text="TextView" 
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/numbertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" 
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+
+</LinearLayout>
