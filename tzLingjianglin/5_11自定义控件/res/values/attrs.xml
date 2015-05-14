@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <declare-styleable name="myviewattrs">
+         <attr name="max_price" format="integer" />
+         <attr name="min_price" format="integer" />
+     </declare-styleable>
+    
+</resources>
