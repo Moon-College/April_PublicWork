@@ -1,0 +1,7 @@
+package com.tz_tian.viewpager_fragment_activity;
+
+import android.support.v4.app.Fragment;
+
+public class MyFragment extends Fragment {
+
+}

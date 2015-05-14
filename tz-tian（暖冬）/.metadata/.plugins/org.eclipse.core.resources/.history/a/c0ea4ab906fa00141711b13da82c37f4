@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hsv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fadingEdge="none"
+    android:scrollbars="none" >
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <RadioButton />
+
+        <RadioButton />
+
+        <RadioButton />
+    </RadioGroup>
+
+</HorizontalScrollView>

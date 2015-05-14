@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hsv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fadingEdge="none"
+    android:scrollbars="none" >
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/china"
+            style="@style/style_rb"
+            android:text="中国" />
+
+        <RadioButton
+            android:id="@+id/korea"
+            style="@style/style_rb"
+            android:text="朝鲜" />
+
+        <RadioButton
+            android:id="@+id/nkorea"
+            style="@style/style_rb"
+            android:text="中国" />
+
+        <RadioButton
+            android:id="@+id/japan"
+            style="@style/style_rb"
+            android:text="日本" />
+
+        <RadioButton
+            android:id="@+id/china"
+            style="@style/style_rb"
+            android:text="中国" />
+
+        <RadioButton
+            android:id="@+id/china"
+            style="@style/style_rb"
+            android:text="中国" />
+
+        <RadioButton
+            android:id="@+id/china"
+            style="@style/style_rb"
+            android:text="中国" />
+    </RadioGroup>
+
+</HorizontalScrollView>

@@ -1,0 +1,28 @@
+package com.tz_tian.viewpager_fragment_activity;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.support.v4.view.ViewPager;
+import android.view.View;
+import android.widget.HorizontalScrollView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+
+public class MainActivity extends Activity {
+
+	private HorizontalScrollView hsv;
+	private RadioGroup rg;
+	private RadioButton china,korea,nKorea,japan,usa,uk;
+	private View v;
+	private ViewPager viewPager;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		initview();
+	}
+
+	private void initview() {
+		
+	}
+}
