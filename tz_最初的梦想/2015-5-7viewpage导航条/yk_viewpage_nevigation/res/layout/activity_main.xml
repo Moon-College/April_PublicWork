@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/mm1"
+                style="@style/radioButton"
+                android:text="夏夏" />
+
+            <RadioButton
+                 android:id="@+id/mm2"
+                style="@style/radioButton"
+                android:text="娜娜" />
+
+            <RadioButton
+                 android:id="@+id/mm3"
+                style="@style/radioButton"
+                android:text="妮妮" />
+
+            <RadioButton
+                 android:id="@+id/mm4"
+                style="@style/radioButton"
+                android:text="爱爱" />
+
+            <RadioButton
+                 android:id="@+id/mm5"
+                style="@style/radioButton"
+                android:text="三倏" />
+
+            <RadioButton
+                 android:id="@+id/mm6"
+                style="@style/radioButton"
+                android:text="屌丝" />
+
+            <RadioButton
+                 android:id="@+id/mm7"
+                style="@style/radioButton"
+                android:text="杨过" />
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:background="#ff0000" />
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
