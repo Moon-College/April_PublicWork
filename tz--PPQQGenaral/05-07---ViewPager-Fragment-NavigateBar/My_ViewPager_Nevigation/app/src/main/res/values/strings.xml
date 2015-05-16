@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My_ViewPager_Nevigation</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="xishi">西施</string>
+    <string name="diaochan">貂蝉</string>
+    <string name="yangguifei">杨贵妃</string>
+    <string name="wangzhaojun">王昭君</string>
+    <string name="luxiaoman">陆小曼</string>
+    <string name="linhuiyin">林徽因</string>
+    <string name="zhouxuan">周璇</string>
+    <string name="ruanlingyu">阮玲玉</string>
+</resources>

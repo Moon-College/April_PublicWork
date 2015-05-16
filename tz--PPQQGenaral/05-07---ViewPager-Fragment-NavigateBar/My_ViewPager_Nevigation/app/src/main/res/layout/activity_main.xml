@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:id="@+id/hsv"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/style_rb"
+                android:text="@string/xishi"
+                android:id="@+id/xishi"/>
+
+            <RadioButton
+                style="@style/style_rb"
+                android:text="@string/diaochan"
+                android:id="@+id/diaochan"/>
+
+            <RadioButton
+                style="@style/style_rb"
+                android:text="@string/wangzhaojun"
+                android:id="@+id/wangzhaojun"/>
+
+            <RadioButton
+                style="@style/style_rb"
+                android:text="@string/yangguifei"
+                android:id="@+id/yangguifei"/>
+
+            <RadioButton
+                style="@style/style_rb"
+                android:text="@string/linhuiyin"
+                android:id="@+id/linhuiyin"/>
+
+            <RadioButton
+                style="@style/style_rb"
+                android:text="@string/luxiaoman"
+                android:id="@+id/luxiaoman"/>
+
+            <RadioButton
+                style="@style/style_rb"
+                android:text="@string/zhouxuan"
+                android:id="@+id/zhouxuan"/>
+
+            <RadioButton
+                style="@style/style_rb"
+                android:text="@string/ruanlingyu"
+                android:id="@+id/ruanlingyu"/>
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <View android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:background="#ff0000"
+            android:id="@+id/view_line"/>
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/vp">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
