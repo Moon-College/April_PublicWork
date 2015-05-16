@@ -15,7 +15,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 /**
- * Study Advanced View ==== Viewpager and  Fragment
+ * Study Advanced View ==== Viewpager, Fragment and Navigate
  * @author Alex on 2015/5/16.
  */
 public class MainActivity extends FragmentActivity implements RadioGroup.OnCheckedChangeListener, ViewPager.OnPageChangeListener {

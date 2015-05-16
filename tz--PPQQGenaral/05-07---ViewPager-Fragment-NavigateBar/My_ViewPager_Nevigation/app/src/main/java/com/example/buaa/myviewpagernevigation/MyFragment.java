@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 /**
- * Created by Administrator on 2015/5/16.
+ * Created by Alex on 2015/5/16.
  */
 public class MyFragment extends Fragment{
 
@@ -21,6 +21,16 @@ public class MyFragment extends Fragment{
                                         R.drawable.zhouxuan,
                                         R.drawable.ruanlingyu
                                         };
+
+    private int[] layoutId = new int[]{ R.layout.xishi,
+                                        R.layout.diaochan,
+                                        R.layout.wangzhaojun,
+                                        R.layout.yangguifei,
+                                        R.layout.linhuiyin,
+                                        R.layout.luxiaoman,
+                                        R.layout.zhouxuan,
+                                        R.layout.ruanlingyu
+                                        };
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         Bundle bundle = this.getArguments();
@@ -29,6 +39,9 @@ public class MyFragment extends Fragment{
         ImageView imageView = new ImageView(getActivity());
         imageView.setImageResource(imageId[position]);
 
-        return imageView;
+        //show  imageView
+//        return imageView;
+        //based on position ,show the xml
+        return inflater.inflate(layoutId[position],null);
     }
 }

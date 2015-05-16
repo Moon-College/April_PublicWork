@@ -4,6 +4,16 @@
     android:layout_height="match_parent"
     android:gravity="center">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我是阮玲玉，哈哈哈"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#ffa6ac7e"/>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
