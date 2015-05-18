@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一个都不能死"
+            android:drawableLeft="@drawable/ic_launcher"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+	
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+         android:background="#ffffff"
+        android:orientation="vertical"
+        >
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tubiao00_cn"
+                android:layout_centerInParent="true"
+                android:id="@+id/normal"
+                />
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tubiao01_cn"
+                android:layout_centerInParent="true"
+                android:id="@+id/nightmare"
+                />
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tubiao02_cn"
+                android:layout_centerInParent="true"
+                android:id="@+id/hell"
+                />
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tubiao03_cn"
+                android:layout_centerInParent="true"
+                android:id="@+id/pur"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
