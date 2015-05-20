@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView 
+            android:drawableLeft="@drawable/ic_launcher"
+            android:text="@string/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        >
+        
+        <!-- 普通模式 -->
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tubiao00_cn"
+                android:layout_centerInParent="true"
+                android:id="@+id/im_normal"
+                android:background="#FFFFFF"/>
+        </RelativeLayout>
+        
+        <!-- 噩梦模式 -->
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tubiao01_cn"
+                android:layout_centerInParent="true"
+                android:id="@+id/im_nightmare"
+                android:background="#FFFFFF"/>
+        </RelativeLayout>
+        
+        <!-- 地狱模式 -->
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tubiao02_cn"
+                android:layout_centerInParent="true"
+                android:id="@+id/im_hell"
+                android:background="#FFFFFF"/>
+        </RelativeLayout>
+        
+        <!-- 炼狱模式 -->
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tubiao03_cn"
+                android:layout_centerInParent="true"
+                android:id="@+id/im_purgatory"
+                android:background="#FFFFFF"/>
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>
