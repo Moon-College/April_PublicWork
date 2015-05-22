@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/ic_launcher"
+            android:text="@string/nodie" 
+            android:gravity="center_vertical"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/commondifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tubiao00_cn"
+            android:layout_gravity="center" 
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/nigthmaredifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tubiao01_cn"
+            android:layout_gravity="center" 
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/infernaldifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tubiao02_cn" 
+            android:layout_gravity="center" 
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/purgatorydifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tubiao03_cn" 
+            android:layout_gravity="center" 
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
