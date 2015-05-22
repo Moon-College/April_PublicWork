@@ -2,6 +2,7 @@ package com.yk.nodie.role;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Rect;
 
 /**
  * 小人
@@ -20,7 +21,7 @@ public class Role {
 	/**
 	 * 速度
 	 */
-	private int speedX,speedY;
+	private float speedX,speedY;
 	/**
 	 * 当前显示的图片
 	 */
@@ -37,6 +38,10 @@ public class Role {
 	 * 上一次时间点
 	 */
 	private long lastTime;
+	/**
+	 * 是否已经跳起来了
+	 */
+	private boolean isJump;
 	
 	public Role(Bitmap[] bms) {
 		this.bms = bms;
@@ -64,6 +69,15 @@ public class Role {
 		switchRole(50);
 		//绘制自己
 		canvas.drawBitmap(bitmap, this.getX(), this.getY(),null);
+	}
+	
+	public Rect getRectFromRole(){
+		Rect rect=new Rect();
+		rect.left=(int) this.getX();
+		rect.right=(int) (this.getX()+this.getWidth());
+		rect.top=(int) this.getY();
+		rect.bottom=(int) (this.getY()+this.getHeith());
+		return rect;
 	}
 	
 	
@@ -101,22 +115,7 @@ public class Role {
 		this.y = y;
 	}
 
-	public int getSpeedX() {
-		return speedX;
-	}
-
-	public void setSpeedX(int speedX) {
-		this.speedX = speedX;
-	}
-
-	public int getSpeedY() {
-		return speedY;
-	}
-
-	public void setSpeedY(int speedY) {
-		this.speedY = speedY;
-	}
-
+	
 	public Bitmap getBitmap() {
 		return bitmap;
 	}
@@ -139,6 +138,24 @@ public class Role {
 
 	public void setBms(Bitmap[] bms) {
 		this.bms = bms;
+	}
+	public float getSpeedX() {
+		return speedX;
+	}
+	public void setSpeedX(float speedX) {
+		this.speedX = speedX;
+	}
+	public float getSpeedY() {
+		return speedY;
+	}
+	public void setSpeedY(float speedY) {
+		this.speedY = speedY;
+	}
+	public boolean getIsJump() {
+		return isJump;
+	}
+	public void setIsJump(boolean isJump) {
+		this.isJump = isJump;
 	}
 }
 
