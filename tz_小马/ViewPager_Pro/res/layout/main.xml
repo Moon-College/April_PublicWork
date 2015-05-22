@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:fadingEdge="none"
+		android:scrollbars="none" >
+        <RadioGroup 
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+        	<RadioButton 
+        	    android:id="@+id/china"
+        	    android:text="中国"
+        	    style="@style/style_rd"/>
+            <RadioButton 
+        	    android:id="@+id/japan"
+        	    android:text="日本"
+        	    style="@style/style_rd"/>
+            <RadioButton 
+        	    android:id="@+id/usa"
+        	    android:text="美国"
+        	    style="@style/style_rd"/>
+            <RadioButton 
+        	    android:id="@+id/uk"
+        	    android:text="英国"
+        	    style="@style/style_rd"/>
+            <RadioButton 
+        	    android:id="@+id/kora"
+        	    android:text="韩国"
+        	    style="@style/style_rd"/>
+            <RadioButton 
+        	    android:id="@+id/nkora"
+        	    android:text="朝鲜"
+        	    style="@style/style_rd"/>
+        </RadioGroup>
+        
+    </HorizontalScrollView>
+    <FrameLayout 
+        android:layout_width="fill_parent"
+       	android:layout_height="5dp">
+        <View 
+            android:id="@+id/scrollBar"
+            android:layout_width="100dp"
+       		android:layout_height="5dp"
+       		android:background="#ff0000"/>
+    </FrameLayout>
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/vp"
+	    android:layout_width="match_parent"
+       	android:layout_height="match_parent"
+	    />
+</LinearLayout>

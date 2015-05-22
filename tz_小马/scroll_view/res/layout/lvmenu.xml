@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout  
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+   	android:layout_height="fill_parent"
+   	android:gravity="center">
+   	<ImageView 
+   	    android:id="@+id/lv_img"
+   	    android:layout_width="50dp"
+   	    android:layout_height="50dp"
+   	    android:layout_marginLeft="20dp"
+   	    android:layout_marginTop="20dp"/>
+	<TextView
+        android:id="@+id/lv_tv"
+        android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:textColor="#f0f0f0"
+   	    android:textSize="20sp"
+   	    android:layout_marginLeft="20dp"
+   	    android:layout_marginTop="10dp"
+   	    android:layout_centerVertical="true"
+   	    android:layout_toRightOf="@id/lv_img"/>
+ </RelativeLayout>
+

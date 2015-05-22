@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ViewPager_ProActivity!</string>
+    <string name="app_name">ViewPager_Pro</string>
+
+</resources>

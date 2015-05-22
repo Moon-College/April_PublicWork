@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">收集日志</string>
+    <string name="app_name">HelloLog_Pro</string>
+    <string name="send">发送</string>
+    <string name="emptyvalue">请输入...</string>
+
+</resources>
