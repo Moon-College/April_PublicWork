@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/linear">
+
+    <Button
+        android:id="@+id/but"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="添加数据" />
+      
+	<EditText 
+	    android:hint="输入id或者name"
+	    android:id="@+id/edit"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+	<LinearLayout 
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:orientation="horizontal">
+	       <Button
+        android:onClick="queryEmpData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查找全部数据" />
+	 <Button
+        android:onClick="queryId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输入id查找" />
+	 <Button
+        android:onClick="queryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输入姓名查找" />
+	 </LinearLayout>
+	  <LinearLayout 
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:orientation="horizontal">
+	  <Button
+        android:onClick="updateAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新所有的人员姓名" />
+	   <Button
+        android:onClick="updateId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="根据id更新人员姓名" />
+	    </LinearLayout>
+	   <LinearLayout 
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:orientation="horizontal">
+	        <Button
+        android:onClick="deleteAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除所有的人员" />
+	   <Button
+        android:onClick="deleteId" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="根据id删除人员" />
+	   <Button
+        android:onClick="deleteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="根据name删除人员" />
+	   </LinearLayout>
+	  
+</LinearLayout>
