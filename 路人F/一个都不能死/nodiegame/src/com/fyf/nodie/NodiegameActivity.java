@@ -151,6 +151,14 @@ public class NodiegameActivity extends Activity implements OnClickListener, Call
 				thread.roles[i].setSpeedY(-h/55);//向上的速度
 				thread.roles[i].setJump(true);
 			}
-		}		
+		}
+		if(y > (h/10 + difficultMode*gameSpan)){
+			if(thread.boom !=0){
+				for(int i = 0;i < difficultMode; i++){
+					thread.initRect(thread.rects[i], i, h/10 + (i+1)*gameSpan);
+				}
+				thread.boom--;
+			}
+		}	
 	}
 }

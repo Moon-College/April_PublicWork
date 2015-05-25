@@ -28,7 +28,7 @@ public class MyThread extends Thread{
 	public static final int GAMEOVER = 2;         //
 	private int gameSpan;                   //游戏区间
 	public Role[] roles;                    //人物数组
-	private Rect[] rects;                   //障碍物数组
+	public Rect[] rects;                   //障碍物数组
 	private Bitmap[] bms;                   //人物动作图片数组
 	private int [] paths;                   //人物动作图片地址
 	private Bitmap heartMap;                //心图
@@ -36,6 +36,9 @@ public class MyThread extends Thread{
 	private int heartWidth;                 //心形宽度
 	private int blood;                      //血量
 	private int halfHeart;                  //半心数量
+	private Bitmap boomMap;                    //炸弹图
+	private int boomWidth;                  //炸弹宽度
+	public int boom;                       //炸弹数量
 	private boolean [] isTouchIng;           //判断是否在碰撞中
 	private int roleHeigth;                 //人物高度	
 	private boolean isPause;
@@ -54,6 +57,9 @@ public class MyThread extends Thread{
 		heartMap = BitmapFactory.decodeResource(context.getResources(), R.drawable.heart);
 		left_heart = BitmapFactory.decodeResource(context.getResources(), R.drawable.left_heart);
 		heartWidth = heartMap.getWidth();
+		//初始化炸弹图片
+		boomMap = BitmapFactory.decodeResource(context.getResources(),R.drawable.boom);
+		boomWidth = boomMap.getWidth();
 		initBitmap();
 		//计算游戏区间高度
 		gameSpan = h*4/(5*difficultMode);
@@ -188,6 +194,12 @@ public class MyThread extends Thread{
 		canvas.drawText(score, w*1/2,  -paint.ascent(), paint);
 		canvas.drawBitmap(heartMap, 0,0, paint);
 		paint.setStrokeWidth(5);
+		//绘制炸弹---------------------------------------------
+		for(int i = 0; i<boom; i++){
+			canvas.drawBitmap(boomMap, i*boomWidth, h/10+difficultMode*gameSpan, paint);
+		}
+		String clickMe = "《----点击我";
+		canvas.drawText(clickMe, w*1/2, 9*h/10+(h/10 -paint.descent()+paint.ascent())/2-paint.ascent(), paint);
 		//绘制游戏区--------------------------------------------
 		for(int i = 0;i<difficultMode;i++){
 			int lineY = h/10+(i+1)*gameSpan;	       			//第i根线的Y坐标								
@@ -240,6 +252,7 @@ public class MyThread extends Thread{
 	public void initSpirit(){
 		blood = 3;                                              //初始化血量
 		halfHeart = 0;											//初始化半心数量
+		boom = 3;                                               //初始化炸弹数
 		startTime = System.currentTimeMillis();                 //初始化开始时间
 		for(int i = 0; i < difficultMode; i++) {
 			int lineY = h/10+(i+1)*gameSpan;
@@ -256,7 +269,7 @@ public class MyThread extends Thread{
 	 * @param lineY
 	 * @param role
 	 */
-	private void initRect(Rect rect,int i,int lineY) {
+	public void initRect(Rect rect,int i,int lineY) {
 		//随机宽高0.25~1.5倍人物宽
 		int random_w = (int) (roleHeigth*(Math.random()*5+1)/7);
 		int random_h = (int) (roleHeigth*(Math.random()*5+1)/7);
