@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/mdb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/database" />
+
+    <Button
+        android:id="@+id/mquery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/queryall" />
+
+
+
+    <Button
+        android:id="@+id/mqueryid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/queryid" />
+
+    <Button
+        android:id="@+id/mqueryname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/queryname" />
+        <Button
+        android:id="@+id/mupdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update" />
+                <Button
+        android:id="@+id/mdel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete" />
+                        <Button
+        android:id="@+id/mdelid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/deleteid" />
+
+</LinearLayout>
