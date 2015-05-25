@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">tz_sqlite</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="database">创建表</string>
+    <string name="queryall">查询所有</string>
+    <string name="queryid">根据id查询</string>
+    <string name="queryname">根据name查询</string>
+    <string name="update">根据id更新name</string>
+    <string name="delete">删除表</string>
+    <string name="deleteid">根据id删除该行</string>
+
+</resources>
